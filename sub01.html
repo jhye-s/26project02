@@ -51,43 +51,47 @@
             </ul>
         </nav>
     </div>
-    <main class="main-visual" aria-label="메인 비주얼">
-        <div class="swiper main-visual-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide main-visual-swiper__slide main-visual-swiper__slide--1">
-                    <div class="main-visual-swiper__text">
-                        <p class="main-visual-swiper__eyebrow">Discover the World</p>
-                        <h2 class="main-visual-swiper__title">당신의 여행이 시작되는 곳</h2>
-                        <p class="main-visual-swiper__lede">특별한 순간을 함께 만들어 드립니다</p>
-                    </div>
-                </div>
-                <div class="swiper-slide main-visual-swiper__slide main-visual-swiper__slide--2">
-                    <div class="main-visual-swiper__text">
-                        <p class="main-visual-swiper__eyebrow">Exclusive Travel</p>
-                        <h2 class="main-visual-swiper__title">오직 당신만을 위한 여정</h2>
-                        <p class="main-visual-swiper__lede">맞춤형 프리미엄 여행 패키지를 경험하세요</p>
-                    </div>
-                </div>
-                <div class="swiper-slide main-visual-swiper__slide main-visual-swiper__slide--3">
-                    <div class="main-visual-swiper__text">
-                        <p class="main-visual-swiper__eyebrow">Unforgettable Moments</p>
-                        <h2 class="main-visual-swiper__title">잊지 못할 추억을 선물합니다</h2>
-                        <p class="main-visual-swiper__lede">전 세계 최고의 여행지로 안내해 드립니다</p>
-                    </div>
+    <section class="subvisual" aria-label="서브 비주얼">
+        <div class="subvisual__inner">
+            <nav class="subvisual__breadcrumb" aria-label="현재 위치">
+                <a href="index.html" class="subvisual__home" aria-label="메인 페이지로 이동">홈</a>
+                <span class="subvisual__divider" aria-hidden="true">/</span>
+                <span class="subvisual__current">회사소개</span>
+            </nav>
+            <h1 class="subvisual__title">회사소개</h1>
+        </div>
+    </section>
+    <main class="main-content">
+        <section class="about-overview" aria-label="회사소개 핵심 소개">
+            <div class="about-overview__inner">
+                <h2 class="about-overview__title">
+                    여행의 시작부터 귀가까지,<br>
+                    PROJECT가 함께합니다
+                </h2>
+                <p class="about-overview__lead">
+                    고객의 취향을 반영한 여행 제안부터 예약, 현지 케어, 사후 상담까지
+                    믿을 수 있는 여행 서비스를 한 곳에서 제공합니다.
+                </p>
+                <div class="about-pillars" role="list" aria-label="핵심 가치">
+                    <article class="about-pillar" role="listitem">
+                        <h3 class="about-pillar__name">맞춤 추천</h3>
+                        <p class="about-pillar__desc">여행 목적과 예산에 맞춘 일정 설계</p>
+                    </article>
+                    <article class="about-pillar" role="listitem">
+                        <h3 class="about-pillar__name">간편 예약</h3>
+                        <p class="about-pillar__desc">항공, 숙소, 투어를 한번에 빠르게</p>
+                    </article>
+                    <article class="about-pillar" role="listitem">
+                        <h3 class="about-pillar__name">안심 케어</h3>
+                        <p class="about-pillar__desc">여행 중 문의와 이슈를 실시간 대응</p>
+                    </article>
+                    <article class="about-pillar" role="listitem">
+                        <h3 class="about-pillar__name">고객 만족</h3>
+                        <p class="about-pillar__desc">여행 후에도 이어지는 책임 있는 서비스</p>
+                    </article>
                 </div>
             </div>
-            <button
-                type="button"
-                class="swiper-button-prev main-visual-swiper__nav main-visual-swiper__nav--prev"
-                aria-label="이전 슬라이드"
-            ></button>
-            <button
-                type="button"
-                class="swiper-button-next main-visual-swiper__nav main-visual-swiper__nav--next"
-                aria-label="다음 슬라이드"
-            ></button>
-            <div class="swiper-pagination main-visual-swiper__pagination"></div>
-        </div>
+        </section>
     </main>
     <footer class="site-footer">
         <div class="site-footer__inner">
