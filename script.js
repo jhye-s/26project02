@@ -137,3 +137,42 @@
         },
     });
 })();
+
+(function () {
+    if (typeof Swiper === "undefined") {
+        return;
+    }
+    var root = document.querySelector(".news-swiper");
+    if (!root) {
+        return;
+    }
+    var prevEl = root.querySelector(".news-swiper__nav--prev");
+    var nextEl = root.querySelector(".news-swiper__nav--next");
+    if (!prevEl || !nextEl) {
+        return;
+    }
+
+    new Swiper(root, {
+        slidesPerView: 1.2,
+        spaceBetween: 12,
+        speed: 620,
+        navigation: {
+            prevEl: prevEl,
+            nextEl: nextEl,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 18,
+            },
+            1280: {
+                slidesPerView: 4,
+                spaceBetween: 18,
+            },
+        },
+    });
+})();
